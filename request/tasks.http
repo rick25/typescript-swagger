@@ -1,0 +1,26 @@
+# LIST TASKS
+GET http://localhost:3000/tasks
+
+### COUNT OF TASKS
+GET http://localhost:3000/tasks/count
+
+### CREATE A TASK
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+    "name": "Necesito dormir bien",
+    "description": "En mi camita blanca"
+}
+
+### DELETING A TASK
+DELETE http://localhost:3000/tasks/mZDLppdp49rviufeGxHPi
+
+### UPDATING A TASK
+PUT http://localhost:3000/tasks/OXOgBhqO7jdOJSPtGzylj
+Content-Type: application/json
+
+{
+    "name": "Necesito dormir bien ACTUALIZADO",
+    "description": "En mi camita blanca ACTUALIZADO"
+}
